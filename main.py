@@ -57,3 +57,7 @@ if __name__=='__main__':
     sort_vac_links = get_sort_vac_links(all_vac_links)
     vac_inf = get_vac_inf(sort_vac_links)
     record_in_json(vac_inf)
+
+    with open('vac_inf.json', 'r') as f:
+        data = json.load(f)
+    print(data)
